@@ -1,2 +1,7 @@
-# erpnext_app_store
-My test task for Monogramm company
+## Erpnext App Store
+
+Application for monogramm company
+
+#### License
+
+MIT
