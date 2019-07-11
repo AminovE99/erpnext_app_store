@@ -1,0 +1,52 @@
+{
+ "autoname": "Application.####",
+ "creation": "2019-07-12 01:48:58.178432",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "description",
+  "link_to_github"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Small Text",
+   "label": "title"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "description"
+  },
+  {
+   "fieldname": "link_to_github",
+   "fieldtype": "Small Text",
+   "label": "link_to_github"
+  }
+ ],
+ "modified": "2019-07-12 01:49:58.783579",
+ "modified_by": "Administrator",
+ "module": "Erpnext App Store",
+ "name": "Application",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

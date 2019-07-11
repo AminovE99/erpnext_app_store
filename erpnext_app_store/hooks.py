@@ -5,7 +5,7 @@ from . import __version__ as app_version
 app_name = "erpnext_app_store"
 app_title = "Erpnext App Store"
 app_publisher = "Aminov Emil"
-app_description = "Application for monogramm company"
+app_description = "Application on frappe. There you can install apps from repositories to your frappe application"
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"
 app_email = "amionv99@gmail.com"

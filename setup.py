@@ -15,7 +15,7 @@ with open('erpnext_app_store/__init__.py', 'rb') as f:
 setup(
 	name='erpnext_app_store',
 	version=version,
-	description='Application for monogramm company',
+	description='Application on frappe. There you can install apps from repositories to your frappe application',
 	author='Aminov Emil',
 	author_email='amionv99@gmail.com',
 	packages=find_packages(),
