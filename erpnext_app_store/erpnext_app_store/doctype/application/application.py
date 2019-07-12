@@ -4,7 +4,12 @@
 
 from __future__ import unicode_literals
 # import frappe
+import json
+
+import frappe
+import requests
 from frappe.model.document import Document
 
+
 class Application(Document):
-	pass
+    pass

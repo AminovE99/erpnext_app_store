@@ -87,26 +87,30 @@ app_license = "MIT"
 #	}
 # }
 
-# Scheduled Tasks
-# ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"erpnext_app_store.tasks.all"
-# 	],
-# 	"daily": [
-# 		"erpnext_app_store.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"erpnext_app_store.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"erpnext_app_store.tasks.weekly"
-# 	]
-# 	"monthly": [
-# 		"erpnext_app_store.tasks.monthly"
-# 	]
-# }
+scheduler_events = {
+    # "cron": {
+    #     "0/2 * * * *": [
+    #         "erpnext_app_store.doctype.info_updater_from_github.update_info"
+    #     ]
+    # },
+    "all": [
+        "erpnext_app_store.tasks.all",
+        "erpnext_app_store.doctype.info_updater_from_github.update_info"
+    ], # 4 minutes
+    "daily": [
+        "erpnext_app_store.tasks.daily"
+    ],
+    "hourly": [
+        "erpnext_app_store.tasks.hourly"
+    ],
+    "weekly": [
+        "erpnext_app_store.tasks.weekly"
+    ],
+    "monthly": [
+        "erpnext_app_store.tasks.monthly"
+    ]
+}
 
 # Testing
 # -------
@@ -119,4 +123,3 @@ app_license = "MIT"
 # override_whitelisted_methods = {
 # 	"frappe.desk.doctype.event.event.get_events": "erpnext_app_store.event.get_events"
 # }
-
