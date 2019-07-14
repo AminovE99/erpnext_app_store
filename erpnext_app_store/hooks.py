@@ -89,15 +89,14 @@ app_license = "MIT"
 
 
 scheduler_events = {
-    # "cron": {
-    #     "0/2 * * * *": [
-    #         "erpnext_app_store.doctype.info_updater_from_github.update_info"
-    #     ]
-    # },
+    "cron": {
+        "0/1 * * * *": [
+            "erpnext_app_store.info_updater_from_github.update_info"
+        ]
+    },
     "all": [
-        "erpnext_app_store.tasks.all",
-        "erpnext_app_store.doctype.info_updater_from_github.update_info"
-    ], # 4 minutes
+        "erpnext_app_store.tasks.all"
+    ],  # 4 minutes
     "daily": [
         "erpnext_app_store.tasks.daily"
     ],
